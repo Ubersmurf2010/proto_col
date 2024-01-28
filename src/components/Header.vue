@@ -19,7 +19,7 @@
 
     <ul class="flex items-center gap-3">
       <li @click="() => emit('openDrawer')" class="flex items-center gap-3 cursor-pointer text-slate-500 hover:text-black">
-        <img src="/cart.svg" alt="Cart" /> 
+        <img src="/trasher.png" alt="Cart" /> 
         <b> {{ totalPrice }} points</b>
       </li>
 
