@@ -21,7 +21,7 @@ onMounted(async () => {
 </script>
 
 <template>
-    <h2 > Tasks </h2>
+    <h2 > Controversial cells </h2>
     <div class="mt-10">
         <CardList :items="favourites" is-favourites/>
     </div>

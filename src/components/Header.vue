@@ -26,7 +26,7 @@
       <router-link to="/favourites">
         <li class="flex items-center gap-3 cursor-pointer text-slate-500 hover:text-black">
           <img src="/heart.svg" alt="Cart" /> 
-          <span>Liked</span>
+          <span>Controversial cells</span>
         </li>
       </router-link>
 
