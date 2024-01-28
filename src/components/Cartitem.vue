@@ -10,7 +10,7 @@ const emit = defineEmits(['onClickRemove'])
 </script>
  
  <template>
-    <div class="flex border border-slate-100 p-4 rounded-xl gap-4 items-center">
+    <div class="flex border p-4 rounded-xl gap-4 items-center">
         <img class="w-16 h-16" :src="imageurl" :alt="title"/>
         <div class="flex flex-col flex-1"> 
                 <p> {{ title }}</p>

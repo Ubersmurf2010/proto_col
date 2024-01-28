@@ -46,7 +46,7 @@ provide('cart', {
 
 
 <template>
-  <div class="bg-neutral-300 w-4/5 m-auto h-full rounded-xl shadow-2xl mt-14">
+  <div class="bg-neutral-100 w-4/5 m-auto h-full rounded-xl shadow-2xl mt-14">
     <Header
       :total-price="totalCartPrice"
       @open-drawer="openDrawer"
