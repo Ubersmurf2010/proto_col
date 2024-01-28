@@ -17,24 +17,26 @@ defineProps({
 
 <template> 
     <div>
-        <div class="relative bg-white cursor-pointer border border-slate-100 rounded-3xl transition py-1 hover:translate-y-2 hover:shadow-xl"> 
+        <div class="py-2 bg-zinc-300 relative bg-transparent border-rose-100 cursor-pointer border rounded-s transition py-1 hover:translate-y-2 hover:shadow-xl"> 
             <img
                 v-if="onClickFavourite"
                 :src="!isFavourite ? '/like-1.svg' : '/like-2.svg'" 
                 alt="Like1"
                 @click="onClickFavourite" 
-                class="absolute top-0 left-1"
+                class="absolute top-2 left-2"
             />
-            <img :src="imageurl" alt="Sneaker"/>
-            <p class="mt-1">{{ title }}: {{ price }}</p>
-
-            <div class="flex justify-between">
-            <img
-                v-if="onClickAdd"
-                @click="onClickAdd" 
-                :src="!isAdded ? '/plus.svg' : '/checked.svg'" 
-                alt="Plus"/>
+            <img :src="imageurl" alt="Cells"/>
+            <div class="flex justify-between"> 
+                <p class="mt-1">{{ title }}: {{ price }}</p>
+                <div class="flex justify-between">
+                <img
+                    v-if="onClickAdd"
+                    @click="onClickAdd" 
+                    :src="!isAdded ? '/plus.svg' : '/checked.svg'" 
+                    alt="Plus"/>
+                </div>
             </div>
+            
         </div>
     </div>
 </template>

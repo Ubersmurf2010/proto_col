@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <header class="flex justify-between border-b border-slate-300 px-8 py-8">
+  <header class="flex justify-between border-black border-b border-slate-300 px-8 py-8">
     <router-link to="/">
       <div class="flex items-center gap-4"> 
         <img src="/logo.jpeg" alt="Logo" class="w-10"/>
@@ -19,14 +19,14 @@
 
     <ul class="flex items-center gap-3">
       <li @click="() => emit('openDrawer')" class="flex items-center gap-3 cursor-pointer text-slate-500 hover:text-black">
-        <img src="/trasher.png" alt="Cart" /> 
+        <img class="w-8 h-8" src="/trasher.png" alt="Cart" /> 
         <b> {{ totalPrice }} points</b>
       </li>
 
       <router-link to="/favourites">
         <li class="flex items-center gap-3 cursor-pointer text-slate-500 hover:text-black">
           <img src="/heart.svg" alt="Cart" /> 
-          <span>For review?</span>
+          <span>Liked</span>
         </li>
       </router-link>
 
