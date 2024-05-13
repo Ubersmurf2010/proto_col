@@ -3,7 +3,6 @@ import axios from 'axios'
 import debounce from 'lodash.debounce'
 import { inject, reactive, watch, ref, onMounted } from 'vue'
 import CardList from '../components/CardList.vue'
-import Counter from '../components/Counter.vue'
 
 
 const { cart, addToCart, removeFromCart } = inject('cart')
@@ -113,9 +112,6 @@ watch(filters, fetchItems)
 <template>
   <div class="p-10">
     <div class="flex justify-between items-center">
-    <div>
-      <Counter />
-    </div>
       <h2 class="text-3xl font-bold mb-10"> Cells </h2>
       <div class="flex gap-4">
         <select @change="onChangeSelect" class="py-2 px-3 border rounded-md outline-none bg-white">

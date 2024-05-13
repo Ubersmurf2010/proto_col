@@ -5,13 +5,16 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import Home from './pages/Home.vue'
 import Favourites from './pages/Favourites.vue'
+import Counter from './components/Counter.vue'
+import Login from './components/Login.vue'
 
-let flag = false;
 const app = createApp(App)
 
 const routes = [
     { path: '/', name: 'Home', component: Home},
-    { path: '/favourites', name: 'Favourites', component: Favourites }
+    { path: '/favourites', name: 'Favourites', component: Favourites },
+    { path: '/countdown', name: 'Countdown', component: Counter },
+    { path: '/login', name: 'Login', component: Login }
 ]
 
 const router = createRouter({
